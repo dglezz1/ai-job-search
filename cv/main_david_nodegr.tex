@@ -1,0 +1,180 @@
+%% No-degree CV variant for David Gonzalez
+%% Removes Education section entirely, expands Skills/Projects to compensate.
+%% Use for: Skill-based hiring, "no degree required" filter, startup applications.
+%%
+%% Compile with: lualatex main_david_nodegr.tex
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\renewcommand*{\firstnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\lastnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={David Gonzalez - CV (No-Degree Variant)},
+    pdfpagemode=FullScreen,
+}
+\usepackage[scale=0.78]{geometry}
+\usepackage{import}
+
+% personal data
+\name{David}{Gonzalez}
+\address{Mexico City, Mexico}{}{}
+\phone[mobile]{+52 729 759 8371}
+\email{davitcoin@pm.me}
+\extrainfo{\href{https://linkedin.com/in/david-gonzalez-7bb60921a}{LinkedIn} $\cdot$ \href{https://github.com/dglezz1}{GitHub (30+ repos)} $\cdot$ \href{https://davitcoin.net}{Portfolio}}
+
+\begin{document}
+
+\makecvtitle
+
+% ============================================================
+%     PROFILE STATEMENT — "Self-taught" up front
+% ============================================================
+
+\vspace{6pt}
+\small{\textbf{Self-taught software engineer with 5+ years of production experience} across AI/LLM engineering, cybersecurity, and full-stack development. (ISC)\textsuperscript{2} CISSP certified. 30+ public GitHub repositories serving as live portfolio. Most recent work: a multi-LLM chat platform orchestrating 10+ providers, an enterprise RAG chatbot for legal professionals, and 50+ production web applications. Open to remote AI/LLM, cybersecurity, and full-stack roles worldwide.}
+
+% ============================================================
+%     CORE COMPETENCIES — expanded
+% ============================================================
+
+\section{Core Competencies}
+\vspace{1pt}
+\begin{itemize}
+
+\item \textbf{AI / LLM Engineering}: Multi-LLM orchestration (OpenAI, Anthropic, Meta, Mistral, open-weight), RAG pipelines (LangChain, LlamaIndex, vector embeddings), prompt engineering, AI agent design, OpenAI Assistants API, function calling, tool-use, structured output, model routing by cost/quality.
+
+\item \textbf{Cybersecurity}: Smart contract auditing (Solidity, EVM bytecode, Foundry, Slither), OWASP Top 10 mitigations, application security review, ethical hacking (Burp Suite, Metasploit), network recon (Nmap, Wireshark), vulnerability assessment (Nessus), ISO 27001 controls, (ISC)\textsuperscript{2} CISSP-aligned security architecture.
+
+\item \textbf{Full-Stack Web}: TypeScript, JavaScript (ES2024), Next.js 15, React, Node.js, Express, NestJS, Remix, Fastify, REST + GraphQL, Prisma ORM, MongoDB, PostgreSQL, MySQL, Redis, BullMQ.
+
+\item \textbf{Cloud \& Infrastructure}: AWS (EC2, S3, IAM, CloudFront, RDS, Lambda), GCP, Azure, Cloudflare (WAF, CDN, Workers, R2), Docker, Docker Compose, containerized production deployments, GitHub Actions CI/CD.
+
+\item \textbf{Systems \& Languages}: C / C++ (kernel-adjacent, OpenSSL extensions), Python (Flask, FastAPI, automation), Bash, Git, Linux administration.
+
+\item \textbf{Web3 \& Smart Contracts}: Solidity, Hardhat, Foundry, OpenZeppelin, ERC-20/721/1155, gas optimization, on-chain forensics, DeFi protocol review.
+
+\end{itemize}
+
+% ============================================================
+%     PROFESSIONAL EXPERIENCE
+% ============================================================
+
+\section{Professional Experience}
+\vspace{3pt}
+\begin{itemize}
+
+% --- Most Recent Role ---
+\item{\cventry{2024--Present}{Full Stack Developer}{Filltech}{Mexico City, Mexico (Remote)}{}{\vspace{1pt}
+\begin{itemize}
+    \item Delivered 50+ tailored websites and web applications in 12 months across diverse client industries (legal, e-commerce, healthcare, education).
+    \item Built an enterprise-grade RAG chatbot for legal professionals: document ingestion, vector embeddings, tenant-isolated data stores, citation-grounded answers, persistent conversation state.
+    \item Production e-commerce backends: MongoDB Atlas, Node.js, Express, React, with parameterized queries, least-privilege IAM, encrypted-at-rest storage.
+    \item Operated production services on AWS EC2 + Cloudflare CDN; 99.9\% uptime over 12+ months.
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- Previous Role ---
+\item{\cventry{2023--2024}{Full Stack Developer, LLM Platform}{GPT Custom}{Remote (Meta partnership)}{}{\vspace{1pt}
+\begin{itemize}
+    \item Architected and shipped a multi-LLM AI chat platform supporting 10+ providers (OpenAI, Anthropic, Meta, Mistral) behind a unified Next.js UX.
+    \item Per-tenant model routing with cost optimization: 30\% reduction in inference spend vs single-provider baseline.
+    \item Built WhatsApp Business API integration with custom training, persistent conversation state in PostgreSQL, and multi-tenant access control.
+    \item Owned full stack end-to-end: Next.js frontend, Node.js backend, PostgreSQL schema, AWS EC2 deployment, Cloudflare CDN.
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- Earlier Role ---
+\item{\cventry{2022--2023}{Smart Contract Auditor}{BKR International KB}{Remote (Sweden, DeFi)}{}{\vspace{1pt}
+\begin{itemize}
+    \item Line-by-line Solidity code review for DeFi protocols pre-mainnet deployment.
+    \item Identified critical vulnerabilities: reentrancy, access-control bypass, oracle manipulation, unsafe external calls, gas-griefing.
+    \item Produced severity-rated audit reports (Critical / High / Medium / Low / Informational) with reproducible PoCs and concrete remediation guidance.
+    \item Reviewed 12+ protocols, including AMMs, lending markets, and NFT marketplaces.
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     SELECTED PROJECTS (replaces Education)
+% ============================================================
+
+\section{Selected Projects (GitHub)}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{2025}{Studio -- Audio AI Platform}{\href{https://github.com/dglezz1}{github.com/dglezz1/studio}}{}{}{Active multi-tenant audio AI platform: TTS, music generation, voice cloning. Next.js 15, Genkit, Prisma, Firebase, Stripe, RevenueCat. 9 PRs merged through structured sprint workflow.}}
+
+\vspace{2pt}
+\item{\cventry{2024}{OpenAI Assistants Reference}{\href{https://github.com/dglezz1}{github.com/dglezz1/openai-assistants}}{}{}{Production reference implementation of multi-provider AI assistant platform with custom function calling and tenant isolation.}}
+
+\vspace{2pt}
+\item{\cventry{2023}{Multi-LLM Platform}{\href{https://github.com/dglezz1}{github.com/dglezz1/multi-llm-platform}}{}{}{Reference architecture for routing 10+ LLM providers behind a single chat interface with cost-aware model selection.}}
+
+\vspace{2pt}
+\item{\cventry{2022--2023}{Smart Contract Audit Reports}{\href{https://github.com/dglezz1}{github.com/dglezz1/audits}}{}{}{Public audit reports for DeFi protocols: vulnerability writeups, PoC code, severity ratings, remediation guidance.}}
+
+\vspace{2pt}
+\item{\cventry{2022}{Systems-Level C / OpenSSL}{\href{https://github.com/dglezz1}{github.com/dglezz1}}{}{}{Kernel-adjacent C work including OpenSSL extensions and low-level systems programming.}}
+
+\end{itemize}
+
+% ============================================================
+%     CERTIFICATIONS (moved up — replaces Education prominence)
+% ============================================================
+
+\section{Certifications}
+\vspace{1pt}
+\begin{itemize}
+\item \textbf{(ISC)\textsuperscript{2} CISSP} -- Certified Information Systems Security Professional (2025--2028)
+\item \textbf{ISO/IEC 27001:2022} Information Security Associate (2025--Present)
+\item \textbf{Google Cloud Cybersecurity Certificate} (2026--2029)
+\item \textbf{Google Foundations of Cybersecurity} (2019--Present)
+\item \textbf{Cybersecurity Analyst Skill Path} -- Google (2024)
+\item \textbf{Ethical Hacking Course} -- Codecademy (2024)
+\end{itemize}
+
+% ============================================================
+%     LANGUAGES
+% ============================================================
+
+\section{Languages}
+\vspace{1pt}
+\begin{itemize}
+\item Spanish (native), English (fluent, professional working proficiency).
+\end{itemize}
+
+% ============================================================
+%     HONORS AND AWARDS
+% ============================================================
+
+\section{Honors and Awards}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{1st place} -- Near Protocol Web3 Hackathon (2021).}
+\item{\textbf{1st place} -- Internet Computer Protocol (ICP) Web3 Community Hackathon (2021).}
+\item{\textbf{1st place} -- Open Web Academy Hackathon (2021).}
+\end{itemize}
+
+% ============================================================
+%     REFERENCES
+% ============================================================
+
+\section{References}
+\vspace{1pt}
+\begin{itemize}
+\item{Available upon request.}
+\end{itemize}
+
+\end{document}
