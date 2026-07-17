@@ -81,3 +81,6 @@ upskill/*.md
 
 # Track the master CV tex source
 !cv/main_david.tex
+!cv/main_david_ai.tex
+!cv/main_david_cyber.tex
+!cv/main_david_fullstack.tex

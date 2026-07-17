@@ -1,0 +1,177 @@
+%% Tailored CV for Full-Stack Developer roles
+%% Based on master CV, optimized for full-stack positions.
+%%
+%% Compile with: lualatex main_david_fullstack.tex
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\renewcommand*{\firstnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\lastnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
+\renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={David Gonzalez - Full-Stack Developer CV},
+    pdfpagemode=FullScreen,
+}
+\usepackage[scale=0.80]{geometry}
+\usepackage{import}
+
+% personal data
+\name{David}{Gonzalez}
+\address{Mexico City, Mexico}{}{}
+\phone[mobile]{+52 729 759 8371}
+\email{davitcoin@pm.me}
+\extrainfo{\href{https://linkedin.com/in/david-gonzalez-7bb60921a}{LinkedIn}, \href{https://github.com/dglezz1}{GitHub}, \href{https://davitcoin.net}{Portfolio}}
+
+\begin{document}
+
+\makecvtitle
+
+% ============================================================
+%     PROFILE STATEMENT (Full-Stack focus)
+% ============================================================
+
+\vspace{6pt}
+\small{Full-stack engineer with 5+ years shipping production web applications end-to-end. Recent work: 50+ tailored web apps in 12 months at Filltech (Next.js, TypeScript, Node.js, MongoDB, PostgreSQL, AWS EC2, Cloudflare CDN). Previously built a multi-LLM chat platform (10+ providers) and a real-time RAG chatbot for legal professionals. Strong in TypeScript-first stacks, AI product integration, and security-aware design. Open to remote full-stack roles worldwide.}
+
+% ============================================================
+%     CORE COMPETENCIES (Full-Stack first)
+% ============================================================
+
+\section{Core Competencies}
+\vspace{1pt}
+\begin{itemize}
+
+\item \textbf{TypeScript-First Stack}: Next.js, React, Node.js, Express, NestJS, Remix, Prisma ORM, Hono, Drizzle. AI-native development with Claude Code and Cursor.
+
+\item \textbf{Databases \& APIs}: PostgreSQL, MongoDB, MySQL, Redis, REST APIs, GraphQL, tRPC, OpenAPI. Strong SQL and schema design.
+
+\item \textbf{Cloud \& DevOps}: AWS (EC2, S3, IAM, CloudFront), GCP, Azure, Cloudflare WAF/CDN, Docker, GitHub Actions, Vercel, CI/CD pipelines.
+
+\item \textbf{AI Integration in Full-Stack Products}: LLM APIs (OpenAI, Anthropic, Meta), RAG pipelines, vector embeddings, prompt engineering. Embedding AI into user-facing features (chat, search, content generation, automation).
+
+\item \textbf{Security Awareness}: (ISC)² CISSP, ISO 27001, OWASP Top 10, secure SDLC, parameterized queries, least-privilege IAM. Builds with security in mind from day one.
+
+\end{itemize}
+
+% ============================================================
+%     PROFESSIONAL EXPERIENCE (Full-Stack leading)
+% ============================================================
+
+\section{Professional Experience}
+\vspace{3pt}
+\begin{itemize}
+
+% --- Most Recent Role ---
+\item{\cventry{2024--Present}{Full-Stack Developer}{Filltech}{Mexico City, Mexico (Remote)}{}{\vspace{1pt}
+\begin{itemize}
+    \item Delivered 50+ tailored websites and web applications in 12 months, spanning e-commerce backends, AI chatbots, insurance apps, e-commerce sites for clients (pâtisserie, insurance, etc.), and SaaS dashboards.
+    \item Built an enterprise RAG chatbot for legal professionals with Next.js, TypeScript, MongoDB, vector embeddings, and tenant-isolated data stores.
+    \item Built production e-commerce backends with MongoDB Atlas, Node.js, Express, React, with secure-by-default patterns.
+    \item Deployed on AWS EC2 with Cloudflare CDN, parameterized queries, least-privilege IAM, encrypted-at-rest storage.
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- Previous Role ---
+\item{\cventry{2023--2024}{Full-Stack Developer, LLM Platform}{GPT Custom}{Remote (Meta partnership)}{}{\vspace{1pt}
+\begin{itemize}
+    \item Architected and shipped a multi-LLM AI chat platform supporting 10+ providers behind a unified Next.js UX, with personalized AI assistants and per-assistant model selection.
+    \item Built WhatsApp Business API integration with custom training, persistent conversation state in PostgreSQL, and backend integration for client data.
+    \item Owned the full stack end-to-end: Next.js frontend, Node.js backend, PostgreSQL schema, AWS EC2 deployment, Cloudflare CDN.
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- Earlier Role ---
+\item{\cventry{2022--2023}{Smart Contract Auditor}{BKR International KB}{Remote (Sweden, DeFi)}{}{\vspace{1pt}
+\begin{itemize}
+    \item Audited Solidity smart contracts for DeFi protocols pre-mainnet deployment, identifying critical security vulnerabilities.
+    \item Built expertise in adversarial thinking and threat modeling that informs every production system I design.
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     EDUCATION
+% ============================================================
+
+\section{Education}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{Continuous}{Self-Taught Software Engineer}{}{}{}{\vspace{1pt}
+Continuous learning through OSS contributions, certifications (CISSP, ISO 27001, Google Cloud Cybersecurity), and 5+ years of production engineering. Active GitHub presence (30+ repositories) including full-stack apps (POS, e-commerce, insurance), AI integrations, and systems-level C work.
+}}
+
+\end{itemize}
+
+% ============================================================
+%     CERTIFICATIONS
+% ============================================================
+
+\section{Certifications}
+\vspace{1pt}
+\begin{itemize}
+\item \textbf{(ISC)\textsuperscript{2} CISSP} -- Certified Information Systems Security Professional (2025--2028)
+\item \textbf{ISO/IEC 27001:2022} Information Security Associate (2025--Present)
+\item \textbf{Google Cloud Cybersecurity} (2026--2029)
+\item \textbf{Google Foundations of Cybersecurity} (2019--Present)
+\item \textbf{Cybersecurity Analyst Skill Path} -- Google (2024)
+\item \textbf{Ethical Hacking Course} -- Codecademy (2024)
+\end{itemize}
+
+% ============================================================
+%     SELECTED FULL-STACK PROJECTS
+% ============================================================
+
+\section{Selected Projects}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{Studio (Dropabyte, AI audio app)} -- \href{https://github.com/dglezz1/studio}{github.com/dglezz1/studio} (active 2026). Production Next.js / TypeScript application integrating AI models for audio generation, with auth and payment integration. \emph{Maintained through 2026.}}
+\item{\textbf{POS System (Dockerized)} -- \href{https://github.com/dglezz1/POS-system-docker}{github.com/dglezz1/POS-system-docker}. TypeScript POS system with Docker, demonstrating production-grade containerization and business logic.}
+\item{\textbf{Frimousse Pâtisserie E-commerce} -- \href{https://github.com/dglezz1/frimousse-backend}{backend} + \href{https://github.com/dglezz1/frimousse-frontend}{frontend}. Full-stack e-commerce for a real client: TypeScript backend API + JavaScript storefront.}
+\item{\textbf{Insurance Web App} -- \href{https://github.com/dglezz1/Insurance-web}{github.com/dglezz1/Insurance-web}. Form flows, validation, business rules for insurance domain.}
+\end{itemize}
+
+% ============================================================
+%     LANGUAGES
+% ============================================================
+
+\section{Languages}
+\vspace{1pt}
+\begin{itemize}
+\item Spanish (native), English (fluent, professional working proficiency).
+\end{itemize}
+
+% ============================================================
+%     HONORS AND AWARDS
+% ============================================================
+
+\section{Honors and Awards}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{1st place} -- Near Protocol Web3 Hackathon (2021).}
+\item{\textbf{1st place} -- Internet Computer Protocol (ICP) Web3 Community Hackathon (2021).}
+\item{\textbf{1st place} -- Open Web Academy Hackathon (2021).}
+\end{itemize}
+
+% ============================================================
+%     REFERENCES
+% ============================================================
+
+\section{References}
+\vspace{1pt}
+\begin{itemize}
+\item{Available upon request.}
+\end{itemize}
+
+\end{document}
