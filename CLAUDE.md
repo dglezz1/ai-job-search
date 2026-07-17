@@ -1,10 +1,9 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for David Gonzalez
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+> Workspace populated 2026-07-17. All placeholders resolved from CV, GitHub, and conversation history.
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for **David Gonzalez**, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,74 +12,120 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
-- **Languages:** [YOUR_LANGUAGES]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Name:** David Gonzalez
+- **Location:** Mexico City, Mexico (Mexico UTC-6) — Remote-first, willing to work global timezones
+- **Languages:** Spanish (native), English (fluent, professional working proficiency)
+- **Status:** Currently employed at Filltech; **available to start new role within 1 week** of offer
+- **LinkedIn headline:** "Full-Stack Developer | AI/LLM Engineering, Cybersecurity & Smart Contract Auditing"
+- **LinkedIn:** linkedin.com/in/david-gonzalez-7bb60921a
+- **GitHub:** github.com/dglezz1 (30+ repos, 1 follower, public)
+- **Email:** davitcoin@pm.me
+- **Phone:** +52 729 759 8371
+- **Portfolio:** davitcoin.net
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+<!-- TODO: Add formal education details (university, degree, year) — not in current CV -->
+- **[DEGREE]** in **[FIELD]** ([YEAR_START]-[YEAR_END]) - **[INSTITUTION]**
+  - *Self-taught software developer with continuous learning via certifications and OSS*
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Full Stack Developer** (2024 – Present) — **Filltech** (Mexico City, Remote)
+  - Delivered **50+ tailored websites and web applications in 12 months** across diverse client industries
+  - Built production e-commerce backends (MongoDB Atlas, Node.js, Express, React)
+  - Built an enterprise-grade RAG chatbot for legal professionals with document vectorization, tenant-isolated data stores, and source-cited answers
+  - Operated production services on AWS EC2 with Cloudflare CDN, secure-by-default patterns (parameterized queries, hardened auth, least-privilege IAM, encrypted-at-rest storage)
+
+- **Full Stack Developer · LLM Platform** (2023 – 2024) — **GPT Custom** (Remote, Meta partnership)
+  - Architected and shipped a **multi-LLM AI chat platform supporting 10+ LLM providers** behind a unified Next.js UX
+  - Built WhatsApp Business API integration with custom training and persistent conversation state in PostgreSQL
+  - Operated services on AWS EC2 behind Cloudflare CDN, owned the full stack end-to-end
+
+- **Smart Contract Auditor** (2022 – 2023) — **BKR International KB** (Remote, Sweden, DeFi)
+  - Line-by-line Solidity code review for DeFi protocols pre-mainnet deployment
+  - Identified critical vulnerabilities: reentrancy, access-control bypass, oracle manipulation, unsafe external calls
+  - Produced severity-rated reports with reproducible PoCs and remediation guidance
+  - Worked with engineering teams on secure remediation patterns
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** TypeScript, JavaScript, Python, Next.js, React, Node.js, PostgreSQL, MongoDB
+- **Secondary:** C, C++, Bash, Express, NestJS, Remix, Angular, Prisma ORM
+- **Domain Expertise:**
+  - **AI/LLM Engineering:** RAG pipelines, multi-LLM orchestration, vector embeddings, prompt engineering, AI agents, OpenAI/Anthropic APIs
+  - **Cybersecurity:** Smart contract auditing (Solidity/EVM), application security (OWASP), ISO 27001, ethical hacking, vulnerability analysis
+  - **Cloud & DevOps:** AWS (EC2, S3, IAM, CloudFront), GCP, Azure, Cloudflare WAF/CDN, Docker
+  - **Web3/Blockchain:** Solidity, Hardhat, Truffle, EVM, DeFi protocols
+- **Software & Tools:** Git, GitHub, Postman, Burp Suite, Metasploit, Nessus, Nmap, Wireshark, Cisco XDR, Azure Security Center, Xcode
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **(ISC)² CISSP** — Certified Information Systems Security Professional (2025 – 2028)
+- **ISO/IEC 27001:2022** Information Security Associate (2025 – Present)
+- **Google Cloud Cybersecurity** (2026 – 2029)
+- **Google Foundations of Cybersecurity** (2019 – Present)
+- **Cybersecurity Analyst Skill Path** — Google (2024)
+- **Ethical Hacking Course** — Codecademy (2024)
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- No peer-reviewed publications currently
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- **1st place** — Near Protocol Web3 Hackathon (2021)
+- **1st place** — Internet Computer Protocol (ICP) Web3 Community Hackathon (2021)
+- **1st place** — Open Web Academy Hackathon (2021)
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Self-starter** — Builds and ships production features end-to-end without hand-offs
+- **Security-first mindset** — Even in product engineering, thinks about threat models before shipping
+- **Breadth + depth** — Comfortable moving between systems-level C code, application architecture, and AI product design in the same day
+- **Strengths:** Cross-functional communication, fast learner, ownership of full-stack features, AI/security duality
+- **Growth areas:** Deeper specialization in ML/AI research, public speaking
+- **Thrives in:** Small-to-mid teams with high ownership, async-remote cultures, fast iteration, AI-first products
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Building AI-native products that solve real problems (RAG, agents, multi-LLM orchestration)
+- Security work that prevents catastrophic outcomes (audits, threat modeling, secure design)
+- Systems-level work (kernel-adjacent code, low-level drivers, hardware interfaces)
+- Open-source contributions and technical writing
+- Working with global, async-first teams
+
+### Target Roles (Priority Order)
+1. **AI/LLM Engineer** — primary target; RAG, multi-LLM, production AI products
+2. **Cybersecurity Analyst / Cloud Security Engineer** — secondary; CISSP + ISO 27001 + certs are unique differentiators
+3. **Full-Stack Developer (NextJS/TypeScript)** — tertiary; high match but competitive market
+4. **Smart Contract Auditor** — niche; passion area but harder to break in without current activity
+5. **Cloud Security Engineer** — combination role; less competition
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- **AI/ML:** Anthropic, OpenAI, AI-first startups, AI consultancies (Indicium, etc.)
+- **Cybersecurity:** Cloud security firms, compliance companies, GRC tools, pentest shops
+- **Web3/DeFi:** Smart contract audit firms (Code4rena, Trail of Bits, OpenZeppelin, Spearbit)
+- **Fintech:** Traditional fintech with AI/security components
+- **SaaS:** AI-native SaaS companies
+
+### Compensation Preferences
+- **Minimum acceptable:** USD 60,000/year (flexible for right opportunity)
+- **Preferred range:** USD 80,000 – 150,000/year (mid-level AI/cyber roles)
+- **Stretch range:** USD 150,000 – 250,000/year (senior + AI/cyber combo)
+- **Currency preference:** USD preferred; open to EUR for EU roles
+- **Contract types:** Open to all (full-time, contract, part-time, freelance)
+
+### Location & Remote Preferences
+- **Primary:** Fully remote (worldwide)
+- **Willing to consider:** Hybrid in Mexico City (rare openings), relocation for exceptional roles
+- **Time zones:** Comfortable working US Eastern, EU Central, and Latin America hours
+- **Visa:** Currently requires sponsorship for US/EU on-site; for remote roles paid as contractor, no sponsorship needed
 
 ### Deal-breakers
-<!-- Hard constraints on job search -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- On-site roles in countries where I don't have work authorization (US, EU)
+- Roles with <USD 60k/year compensation
+- Projects involving weapons, surveillance, or military applications
+- Crypto rug-pulls or projects with no legitimate product
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
 - `cover_letters/` - LaTeX cover letters (custom cover.cls template)
 - `.claude/skills/` - AI skill definitions for the application workflow
-- `.agents/skills/` - Job search CLI tools
+- `.agents/skills/` - Job search CLI tools (Danish portals + linkedin-search + freehire-search)
 
 ## Workflow for New Job Applications
 1. User provides a job posting (URL or text)
