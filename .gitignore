@@ -49,7 +49,13 @@ skills-lock.json
 cv/main_*.tex
 !cv/main_example.tex
 cv/*.txt
-cover_letters/cover_*.tex
+!cover_letters/cover_intetics.tex
+!cover_letters/cover_armis.tex
+!cover_letters/cover_drfirst.tex
+!cover_letters/cover_truelogic.tex
+!cover_letters/cover_desktop.tex
+!cover_letters/cover_lennar.tex
+!cover_letters/cover_chicory.tex
 cover_letters/Cover_*.tex
 !cover_letters/cover_example.tex
 
