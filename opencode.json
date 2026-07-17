@@ -35,6 +35,10 @@
       "template": "{file:.claude/skills/upskill/SKILL.md}\n\nArguments: $ARGUMENTS",
       "description": "Generate prioritized learning plan"
     },
+    "html-report": {
+      "template": "{file:.claude/commands/html-report.md}",
+      "description": "Generate application tracker dashboard"
+    },
     "add-portal": {
       "template": "{file:.claude/commands/add-portal.md}",
       "description": "Register a new job portal"
@@ -50,7 +54,16 @@
   },
   "permission": {
     "edit": "allow",
-    "bash": "allow",
+    "bash": {
+      "*": "ask",
+      "bun run *": "allow",
+      "bun install *": "allow",
+      "python salary_lookup.py *": "allow",
+      "python3 salary_lookup.py *": "allow",
+      "lualatex *": "allow",
+      "xelatex *": "allow",
+      "pdftotext *": "allow"
+    },
     "webfetch": "allow",
     "websearch": "allow"
   }

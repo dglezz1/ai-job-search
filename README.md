@@ -252,6 +252,8 @@ opencode
 
 Commands, prompts, and output contracts are identical. OpenCode just needs one extra file (`opencode.json`) that tells it where to find each workflow. See `AGENTS.md` for the architecture.
 
+> **Note:** The OpenCode `permission` block in `opencode.json` uses a curated allowlist for `bash` commands (matching upstream's `.claude/settings.json` posture). Only workflow-essential commands (`bun run`, `lualatex`, `xelatex`, `pdftotext`, `python salary_lookup.py`) are auto-approved; other commands prompt for confirmation.
+
 ### What makes this workflow different
 
 - **PDF verification loop.** Most LaTeX-resume templates produce "looks fine in the .tex" output that breaks in the PDF: job titles orphan to the next page, cover letters spill onto page 2, bullet fonts silently fall back to the body font. The `/apply` command compiles and visually inspects every PDF and applies targeted fixes (`\needspace`, `\enlargethispage`, font-matching wrappers for list items) until the layout is clean. This runs automatically on every application.
