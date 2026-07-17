@@ -78,3 +78,6 @@ upskill/*.md
 
 # Brainstorm mockups (superpowers visual companion) - never ship
 .superpowers/
+
+# Track the master CV tex source
+!cv/main_david.tex
